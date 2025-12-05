@@ -1,0 +1,124 @@
+.username-modal .modal-content {
+  min-height: 600px;
+}
+
+.username-modal .modal-left {
+  background: linear-gradient(135deg, #7C3AED 0%, #5B21B6 50%, #4C1D95 100%);
+}
+
+.profile-examples {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 30px;
+  position: relative;
+  z-index: 1;
+}
+
+.profile-example {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 12px 16px;
+  border-radius: 8px;
+  backdrop-filter: blur(10px);
+}
+
+.profile-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: white;
+  color: #7C3AED;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.profile-example span {
+  flex: 1;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.username-instruction {
+  font-size: 14px;
+  color: #64748B;
+  line-height: 1.6;
+  margin: 0 0 24px 0;
+}
+
+.username-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.username-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1E293B;
+  margin-bottom: 8px;
+}
+
+.username-input {
+  width: 100%;
+  padding: 14px 20px;
+  border: 2px solid #E2E8F0;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  transition: all 0.3s;
+}
+
+.username-input:focus {
+  border-color: #1DA1F2;
+  box-shadow: 0 0 0 3px rgba(29, 161, 242, 0.1);
+}
+
+.error-message {
+  color: #EF4444;
+  font-size: 14px;
+  margin: -8px 0 0 0;
+}
+
+.username-helper {
+  font-size: 13px;
+  color: #94A3B8;
+  margin: -4px 0 0 0;
+}
+
+.username-submit-button {
+  width: 100%;
+  padding: 14px 20px;
+  background: #E2E8F0;
+  color: #64748B;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-top: 8px;
+}
+
+.username-submit-button:hover:not(:disabled) {
+  background: #1DA1F2;
+  color: white;
+  box-shadow: 0 4px 12px rgba(29, 161, 242, 0.3);
+}
+
+.username-submit-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+@media (max-width: 768px) {
+  .profile-examples {
+    display: none;
+  }
+}
+

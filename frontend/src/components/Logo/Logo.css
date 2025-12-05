@@ -1,0 +1,24 @@
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+}
+
+.logo-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-text {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1DA1F2;
+  letter-spacing: -0.5px;
+}
+
+.logo-text::first-letter {
+  text-transform: uppercase;
+}
+
