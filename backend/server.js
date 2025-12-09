@@ -30,6 +30,7 @@ app.use('/api/orders', require('./routes/orders'));
 
 // Serve uploaded files
 app.use('/uploads', express.static('uploads'));
+app.use('/api/upload', require('./routes/upload'));
 
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);

@@ -6,8 +6,13 @@ import Dashboard from './pages/Dashboard';
 import GigsDashboard from './pages/GigsDashboard';
 import MessagesPage from './pages/MessagesPage';
 import OrdersPage from './pages/OrdersPage';
+import SearchResultsPage from './pages/SearchResultsPage';
+import GigDetailPage from './pages/GigDetailPage';
+import FavoritesPage from './pages/FavoritesPage';
 import { isAuthenticated } from './utils/auth';
-
+ import CreateGigPage from './pages/CreateGigPage';
+   import MyGigsPage from './pages/MyGigsPage';
+   import GigAnalyticsPage from './pages/GigAnalyticsPage';
 function App() {
   return (
     <Router>
@@ -26,6 +31,24 @@ function App() {
               isAuthenticated() ? <GigsDashboard /> : <Navigate to="/" replace />
             } 
           />
+           <Route 
+            path="/search" 
+            element={
+              isAuthenticated() ? <SearchResultsPage /> : <Navigate to="/" replace />
+            } 
+          />
+          <Route 
+            path="/gig/:gigId" 
+            element={
+              isAuthenticated() ? <GigDetailPage /> : <Navigate to="/" replace />
+            } 
+          />
+          <Route 
+            path="/favorites" 
+            element={
+              isAuthenticated() ? <FavoritesPage /> : <Navigate to="/" replace />
+            } 
+          />
           <Route 
             path="/messages" 
             element={
@@ -38,6 +61,15 @@ function App() {
               isAuthenticated() ? <OrdersPage /> : <Navigate to="/" replace />
             } 
           />
+          <Route path="/create-gig" element={
+              isAuthenticated() ? <CreateGigPage/> : <Navigate to="/" replace />}/>
+              <Route path="/my-gigs" element={
+              isAuthenticated() ? <MyGigsPage/> : <Navigate to="/" replace />}/>
+              <Route path="/gig-analytics/:gigId" element={
+              isAuthenticated() ? <GigAnalyticsPage/> : <Navigate to="/" replace />}/>
+              <Route path="/edit-gig/:gigId" element={
+              isAuthenticated() ? <CreateGigPage/> : <Navigate to="/" replace />}/>
+          
         </Routes>
       </div>
     </Router>

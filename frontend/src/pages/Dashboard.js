@@ -277,7 +277,13 @@ const Dashboard = () => {
                   One or more of your offerings can be promoted through Fiverr Ads.
                 </p>
               </div>
-
+              
+   <button onClick={() => navigate('/my-gigs')}>
+     My Gigs
+   </button>
+   <button onClick={() => navigate('/create-gig')}>
+     Create New Gig
+   </button>
               {/* Active orders card */}
               <div 
                 className="action-card active-orders-card" 
