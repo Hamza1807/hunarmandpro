@@ -1,0 +1,23 @@
+{
+  "name": "hunarmandpro",
+  "version": "1.0.0",
+  "description": "HunarmandPro - A Fiverr-like freelance marketplace platform",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd backend && npm run dev",
+    "client": "cd frontend && npm start",
+    "install-all": "npm install && cd frontend && npm install && cd ../backend && npm install"
+  },
+  "keywords": [
+    "freelance",
+    "marketplace",
+    "fiverr"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
+
