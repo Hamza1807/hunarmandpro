@@ -950,7 +950,11 @@ const Dashboard = () => {
           </div>
 
           {/* Earnings Section */}
-          <div className="sidebar-section">
+          <div 
+            className="sidebar-section earnings-section" 
+            onClick={() => navigate('/earnings')}
+            style={{ cursor: 'pointer' }}
+          >
             <h4 className="section-title">Earned in December</h4>
             <div className="earnings-amount">$0</div>
           </div>

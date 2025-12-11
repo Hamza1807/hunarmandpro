@@ -14,6 +14,8 @@ import { isAuthenticated } from './utils/auth';
    import MyGigsPage from './pages/MyGigsPage';
    import GigAnalyticsPage from './pages/GigAnalyticsPage';
 import HunarmandProPremium from './pages/Premium'; 
+import Earnings from './pages/Earnings';
+
 function App() {
   return (
     <Router>
@@ -71,6 +73,7 @@ function App() {
               <Route path="/edit-gig/:gigId" element={
               isAuthenticated() ? <CreateGigPage/> : <Navigate to="/" replace />}/>
           <Route path="/premium" element={<HunarmandProPremium />} /> 
+          <Route path="/earnings" element={<Earnings />} />
 
         </Routes>
       </div>
@@ -79,4 +82,5 @@ function App() {
 }
 
 export default App;
+
 
