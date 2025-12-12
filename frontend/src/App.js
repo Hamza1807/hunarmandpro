@@ -75,6 +75,7 @@ function App() {
           <Route path="/premium" element={<HunarmandProPremium />} /> 
           <Route path="/earnings" element={<Earnings />} />
 
+          
         </Routes>
       </div>
     </Router>
@@ -82,5 +83,4 @@ function App() {
 }
 
 export default App;
-
 
