@@ -316,19 +316,19 @@
 }
 
 /* Overlay - center the modal */
-.modal-overlay {
+/* .modal-overlay {
   position: fixed;
   inset: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: rgba(0,0,0,0.35); /* slightly lighter overlay */
+  background: rgba(0,0,0,0.35); /* slightly lighter overlay /
   padding: 12px;
   z-index: 9999;
-}
+} */
 
 /* Neutralize framework height rules */
-.modal-overlay .modal-content,
+/* .modal-overlay .modal-content,
 .modal-dialog,
 .modal {
   height: auto !important;
@@ -337,7 +337,7 @@
   display: block !important;
   flex: none !important;
   box-sizing: border-box !important;
-}
+} */
 
 /* Blue container — compact & limited height */
 .success-modal {

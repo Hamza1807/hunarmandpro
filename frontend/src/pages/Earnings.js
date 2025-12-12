@@ -229,6 +229,7 @@ const Earnings = () => {
             <div className="success-message">
               <h2 className="success-title">Payment transferred</h2>
               <p className="success-subtitle">Successfully</p>
+              <p className="success-subtitle">Payment will be transferred upto 1 Week.</p>
             </div>
             
             <div className="modal-footer">
